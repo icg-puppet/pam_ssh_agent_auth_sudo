@@ -16,7 +16,7 @@ class pam_ssh_agent_auth_sudo {
     amazon: {
       $supported = true
     }
-    redhat, centos, OracleLinux: {
+    redhat, centos, 'OracleLinux': {
       $supported = true
       notify { 'EPEL is required for pam_ssh_agent_auth module': }
     }
